@@ -1,0 +1,2966 @@
+<!-- Main Content -->
+<div id="content" class="site-content">
+  <!-- Slideshow -->
+  <div class="section slideshow">
+    <div class="tiva-slideshow-wrapper">
+      <div id="tiva-slideshow" class="nivoSlider">
+        <a href="#" *ngFor="let s of list_slide">
+          <img class="img-responsive" src="{{s.image}}" alt="Slideshow Image">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Product - Best Sellers -->
+  <div class="section products-block product-tab nav-color show-hover nav-round best-sellers">
+    <div class="block-title">
+      <h2 class="title"><span>Sản phẩm bán chạy</span></h2>
+      <div class="sub-title"></div>
+    </div>
+
+    <div class="block-content">
+      <!-- Tab Navigation -->
+      <div class="tab-nav">
+        <ul>
+          <li class="active">
+            <a data-toggle="tab" href="#all-products">
+              <img src="/assets/img/product/product-category-0.png" alt="All Product">
+              <span>Tất cả sản phẩm</span>
+            </a>
+          </li>
+          <li *ngFor="let c of list_category">
+            <a data-toggle="tab" href="#vegetables">
+              <img src="{{c.image}}" alt="Vegetables" style="height:100px; width:100px;">
+              <span>{{c.name}}</span>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#tea">
+              <img src="/assets/img/product/product-category-5.png" alt="Tea">
+              <span>Tea</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <!-- All Products -->
+        <div role="tabpanel" class="tab-pane fade in active" id="all-products">
+          <div class="products owl-theme owl-carousel">
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/4.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/8.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$120.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/9.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star on"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/10.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$96.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/33.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/5.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/6.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vegetables -->
+        <div role="tabpanel" class="tab-pane fade" id="vegetables">
+          <div class="products owl-theme owl-carousel">
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/8.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$120.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/10.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$96.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/4.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/33.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/5.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/6.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/9.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star on"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fruits -->
+        <div role="tabpanel" class="tab-pane fade" id="fruits">
+          <div class="products owl-theme owl-carousel">
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/4.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/5.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/6.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/8.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$120.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/9.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star on"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/10.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$96.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/33.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bread -->
+        <div role="tabpanel" class="tab-pane fade" id="bread">
+          <div class="products owl-theme owl-carousel">
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/4.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/8.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$120.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/5.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/6.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/9.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star on"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/10.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$96.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/33.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juices -->
+        <div role="tabpanel" class="tab-pane fade" id="juices">
+          <div class="products owl-theme owl-carousel">
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/4.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/8.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$120.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/9.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star on"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/10.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$96.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/5.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/6.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/33.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tea -->
+        <div role="tabpanel" class="tab-pane fade" id="tea">
+          <div class="products owl-theme owl-carousel">
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/4.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/8.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$120.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/9.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star on"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/10.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$96.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/33.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/5.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-image">
+                <a href="product-detail-left-sidebar.html">
+                  <img src="/assets/img/product/6.jpg" alt="Product Image">
+                </a>
+              </div>
+
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- List Product -->
+  <div class="container">
+    <div class="row">
+      <!-- Page Content -->
+      <div id="center-column" class="col-lg-12 col-md-12">
+        <div class="product-category-page">
+          <!-- Nav Bar -->
+          <div class="products-bar">
+            <div class="row">
+              <div class="col-md-6 col-xs-6">
+                <div class="gridlist-toggle" role="tablist">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#products-grid" data-toggle="tab" aria-expanded="true"><i class="fa fa-th-large"></i></a></li>
+                    <li><a href="#products-list" data-toggle="tab" aria-expanded="false"><i class="fa fa-bars"></i></a></li>
+                  </ul>
+                </div>
+
+                <div class="total-products">There are 12 products</div>
+              </div>
+
+              <div class="col-md-6 col-xs-6">
+                <div class="filter-bar">
+                  <form action="#" class="pull-right">
+                    <div class="select">
+                      <select class="form-control">
+                        <option value="">Sort By</option>
+                        <option value="1">Price: Lowest first</option>
+                        <option value="2">Price: Highest first</option>
+                        <option value="3">Product Name: A to Z</option>
+                        <option value="4">Product Name: Z to A</option>
+                        <option value="5">In stock</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form action="#" class="pull-right">
+                    <div class="select">
+                      <select class="form-control">
+                        <option value="">Relevance</option>
+                        <option value="1">Price: Lowest first</option>
+                        <option value="2">Price: Highest first</option>
+                        <option value="3">Product Name: A to Z</option>
+                        <option value="4">Product Name: Z to A</option>
+                        <option value="5">In stock</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <!-- Products Grid -->
+            <div class="tab-pane active" id="products-grid">
+              <div class="products-block">
+                <div class="row">
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/4.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$80.00</span>
+                        <span class="base-price">$90.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/14.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$80.00</span>
+                        <span class="base-price">$90.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/17.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$80.00</span>
+                        <span class="base-price">$90.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/8.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$120.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/9.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$80.00</span>
+                        <span class="base-price">$90.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/15.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$80.00</span>
+                        <span class="base-price">$90.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/10.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$96.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/33.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$80.00</span>
+                        <span class="base-price">$90.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/22.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$80.00</span>
+                        <span class="base-price">$90.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/20.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$96.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/23.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$80.00</span>
+                        <span class="base-price">$90.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="product-item">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/30.jpg" alt="Product Image">
+                        </a>
+                      </div>
+
+                      <div class="product-title">
+                        <a href="product-detail-left-sidebar.html">
+                          Organic Strawberry Fruits
+                        </a>
+                      </div>
+
+                      <div class="product-rating">
+                        <div class="star on"></div>
+                        <div class="star on"></div>
+                        <div class="star on "></div>
+                        <div class="star on"></div>
+                        <div class="star"></div>
+                      </div>
+
+                      <div class="product-price">
+                        <span class="sale-price">$80.00</span>
+                        <span class="base-price">$90.00</span>
+                      </div>
+
+                      <div class="product-buttons">
+                        <a class="add-to-cart" href="#">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="add-wishlist" href="#">
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="quickview" href="#">
+                          <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Products List -->
+            <div class="tab-pane" id="products-list">
+              <div class="products-block layout-5">
+                <div class="product-item">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/4.jpg" alt="Product Image">
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                      <div class="product-info">
+                        <div class="product-title">
+                          <a href="product-detail-left-sidebar.html">
+                            Organic Strawberry Fruits
+                          </a>
+                        </div>
+
+                        <div class="product-rating">
+                          <div class="star on"></div>
+                          <div class="star on"></div>
+                          <div class="star on "></div>
+                          <div class="star on"></div>
+                          <div class="star"></div>
+                          <span class="review-count">(3 Reviews)</span>
+                        </div>
+
+                        <div class="product-price">
+                          <span class="sale-price">$80.00</span>
+                          <span class="base-price">$90.00</span>
+                        </div>
+
+                        <div class="product-stock">
+                          <i class="fa fa-check-square-o" aria-hidden="true"></i>In stock
+                        </div>
+
+                        <div class="product-description">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
+                        </div>
+
+                        <div class="product-buttons">
+                          <a class="add-to-cart" href="#">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                            <span>Add To Cart</span>
+                          </a>
+
+                          <a class="add-wishlist" href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+
+                          <a class="quickview" href="#">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/14.jpg" alt="Product Image">
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                      <div class="product-info">
+                        <div class="product-title">
+                          <a href="product-detail-left-sidebar.html">
+                            Organic Strawberry Fruits
+                          </a>
+                        </div>
+
+                        <div class="product-rating">
+                          <div class="star on"></div>
+                          <div class="star on"></div>
+                          <div class="star on "></div>
+                          <div class="star on"></div>
+                          <div class="star"></div>
+                          <span class="review-count">(3 Reviews)</span>
+                        </div>
+
+                        <div class="product-price">
+                          <span class="sale-price">$80.00</span>
+                          <span class="base-price">$90.00</span>
+                        </div>
+
+                        <div class="product-stock">
+                          <i class="fa fa-check-square-o" aria-hidden="true"></i>In stock
+                        </div>
+
+                        <div class="product-description">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
+                        </div>
+
+                        <div class="product-buttons">
+                          <a class="add-to-cart" href="#">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                            <span>Add To Cart</span>
+                          </a>
+
+                          <a class="add-wishlist" href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+
+                          <a class="quickview" href="#">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/17.jpg" alt="Product Image">
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                      <div class="product-info">
+                        <div class="product-title">
+                          <a href="product-detail-left-sidebar.html">
+                            Organic Strawberry Fruits
+                          </a>
+                        </div>
+
+                        <div class="product-rating">
+                          <div class="star on"></div>
+                          <div class="star on"></div>
+                          <div class="star on "></div>
+                          <div class="star on"></div>
+                          <div class="star"></div>
+                          <span class="review-count">(3 Reviews)</span>
+                        </div>
+
+                        <div class="product-price">
+                          <span class="sale-price">$80.00</span>
+                          <span class="base-price">$90.00</span>
+                        </div>
+
+                        <div class="product-stock">
+                          <i class="fa fa-check-square-o" aria-hidden="true"></i>In stock
+                        </div>
+
+                        <div class="product-description">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
+                        </div>
+
+                        <div class="product-buttons">
+                          <a class="add-to-cart" href="#">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                            <span>Add To Cart</span>
+                          </a>
+
+                          <a class="add-wishlist" href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+
+                          <a class="quickview" href="#">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/8.jpg" alt="Product Image">
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                      <div class="product-info">
+                        <div class="product-title">
+                          <a href="product-detail-left-sidebar.html">
+                            Organic Strawberry Fruits
+                          </a>
+                        </div>
+
+                        <div class="product-rating">
+                          <div class="star on"></div>
+                          <div class="star on"></div>
+                          <div class="star on "></div>
+                          <div class="star on"></div>
+                          <div class="star"></div>
+                          <span class="review-count">(3 Reviews)</span>
+                        </div>
+
+                        <div class="product-price">
+                          <span class="sale-price">$80.00</span>
+                          <span class="base-price">$90.00</span>
+                        </div>
+
+                        <div class="product-stock">
+                          <i class="fa fa-check-square-o" aria-hidden="true"></i>In stock
+                        </div>
+
+                        <div class="product-description">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
+                        </div>
+
+                        <div class="product-buttons">
+                          <a class="add-to-cart" href="#">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                            <span>Add To Cart</span>
+                          </a>
+
+                          <a class="add-wishlist" href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+
+                          <a class="quickview" href="#">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                      <div class="product-image">
+                        <a href="product-detail-left-sidebar.html">
+                          <img class="img-responsive" src="/assets/img/product/9.jpg" alt="Product Image">
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                      <div class="product-info">
+                        <div class="product-title">
+                          <a href="product-detail-left-sidebar.html">
+                            Organic Strawberry Fruits
+                          </a>
+                        </div>
+
+                        <div class="product-rating">
+                          <div class="star on"></div>
+                          <div class="star on"></div>
+                          <div class="star on "></div>
+                          <div class="star on"></div>
+                          <div class="star"></div>
+                          <span class="review-count">(3 Reviews)</span>
+                        </div>
+
+                        <div class="product-price">
+                          <span class="sale-price">$80.00</span>
+                          <span class="base-price">$90.00</span>
+                        </div>
+
+                        <div class="product-stock">
+                          <i class="fa fa-check-square-o" aria-hidden="true"></i>In stock
+                        </div>
+
+                        <div class="product-description">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
+                        </div>
+
+                        <div class="product-buttons">
+                          <a class="add-to-cart" href="#">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                            <span>Add To Cart</span>
+                          </a>
+
+                          <a class="add-wishlist" href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+
+                          <a class="quickview" href="#">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination Bar -->
+          <div class="pagination-bar">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="text">Showing 1-12 of 20 item(s)</div>
+              </div>
+
+              <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="pagination">
+                  <ul class="page-list">
+                    <li><a href="#" class="prev">Previous</a></li>
+                    <li><a href="#" class="current">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#" class="next">Next</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Product - Deals Of The Day -->
+ <div class="section products-block deals-of-day show-hover nav-color layout-2">
+  <div class="block-title">
+    <h2 class="title">Deals of <span>The Day</span></h2>
+    <div class="sub-title">Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor</div>
+  </div>
+
+  <div class="block-content">
+    <div class="products owl-theme owl-carousel">
+      <div class="product-item">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 product-left">
+            <div class="product-info">
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$35.00</span>
+                <span class="base-price">$55.00</span>
+              </div>
+
+              <div class="product-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit....</div>
+
+              <div class="product-countdown" data-date="2018/10/30">
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xs-12 product-right">
+            <div class="product-image">
+              <a href="product-detail-left-sidebar.html">
+                <img src="/assets/img/product/18.jpg" alt="Product Image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 product-left">
+            <div class="product-info">
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star on"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$60.00</span>
+                <span class="base-price">$78.00</span>
+              </div>
+
+              <div class="product-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit....</div>
+
+              <div class="product-countdown" data-date="2018/11/22">
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <div class="product-image">
+              <a href="product-detail-left-sidebar.html">
+                <img src="/assets/img/product/7.jpg" alt="Product Image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 product-left">
+            <div class="product-info">
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit....</div>
+
+              <div class="product-countdown" data-date="2018/11/04">
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <div class="product-image">
+              <a href="product-detail-left-sidebar.html">
+                <img src="/assets/img/product/40.jpg" alt="Product Image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 product-left">
+            <div class="product-info">
+              <div class="product-title">
+                <a href="product-detail-left-sidebar.html">
+                  Organic Strawberry Fruits
+                </a>
+              </div>
+
+              <div class="product-rating">
+                <div class="star on"></div>
+                <div class="star on"></div>
+                <div class="star on "></div>
+                <div class="star on"></div>
+                <div class="star"></div>
+              </div>
+
+              <div class="product-price">
+                <span class="sale-price">$80.00</span>
+                <span class="base-price">$90.00</span>
+              </div>
+
+              <div class="product-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit....</div>
+
+              <div class="product-countdown" data-date="2018/12/10">
+              </div>
+
+              <div class="product-buttons">
+                <a class="add-to-cart" href="#">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </a>
+
+                <a class="add-wishlist" href="#">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+
+                <a class="quickview" href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <div class="product-image">
+              <a href="product-detail-left-sidebar.html">
+                <img src="/assets/img/product/11.jpg" alt="Product Image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Latest News -->
+  <div class="section latest-news">
+    <div class="block-title">
+      <div class="sub-title">From Our Blog</div>
+      <h2 class="title">Latest <span>News</span></h2>
+    </div>
+
+    <div class="block-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="blog-item">
+              <div class="blog-image">
+                <a href="blog-detail.html" class="zoom-effect">
+                  <img src="/assets/img/blog/blog-1.jpg" alt="Blog Image">
+                </a>
+              </div>
+              <div class="blog-info">
+                <div class="blog-time">
+                  <span><i class="zmdi zmdi-comments"></i>13 comment</span>
+                  <span><i class="zmdi zmdi-calendar-note"></i></span>
+                </div>
+                <div class="blog-title"><a href="blog-detail.html">5 Best fruits to make you fresh and healthy</a></div>
+                <div class="blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</div>
+                <div class="readmore"><a href="blog-detail.html">Read more</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="blog-item">
+              <div class="blog-image">
+                <a href="blog-detail.html" class="zoom-effect">
+                  <img src="/assets/img/blog/blog-2.jpg" alt="Blog Image">
+                </a>
+              </div>
+              <div class="blog-info">
+                <div class="blog-time">
+                  <span><i class="zmdi zmdi-comments"></i>13 comment</span>
+                  <span><i class="zmdi zmdi-calendar-note"></i>20 APRIl 2017</span>
+                </div>
+                <div class="blog-title"><a href="blog-detail.html">5 Best fruits to make you fresh and healthy</a></div>
+                <div class="blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</div>
+                <div class="readmore"><a href="blog-detail.html">Read more</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
