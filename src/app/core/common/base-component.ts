@@ -1,13 +1,13 @@
 import { Injector, Renderer2 } from '@angular/core';
-// import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../services/api.service';
 export class BaseComponent {
     public _renderer: any;
-    // public _route: ActivatedRoute;
+    public _route: ActivatedRoute;
     public _api : ApiService
     constructor(injector: Injector) {
         this._renderer = injector.get(Renderer2);
-        // this._route = injector.get(ActivatedRoute);
+        this._route = injector.get(ActivatedRoute);
         this._api = injector.get(ApiService);
     }
     public loadScripts(...list: string[] ) {
