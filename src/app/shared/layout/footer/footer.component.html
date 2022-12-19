@@ -48,44 +48,9 @@
 
               <div class="block-content">
                 <div class="row margin-0">
-                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
-                    <a href="#">
-                      <img src="./assets/img/instagram-1.png" alt="Instagram Image">
-                    </a>
-                  </div>
-                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
-                    <a href="#">
-                      <img src="./assets/img/instagram-2.png" alt="Instagram Image">
-                    </a>
-                  </div>
-                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
-                    <a href="#">
-                      <img src="./assets/img/instagram-3.png" alt="Instagram Image">
-                    </a>
-                  </div>
-                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
-                    <a href="#">
-                      <img src="./assets/img/instagram-4.png" alt="Instagram Image">
-                    </a>
-                  </div>
-                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
-                    <a href="#">
-                      <img src="./assets/img/instagram-5.png" alt="Instagram Image">
-                    </a>
-                  </div>
-                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
-                    <a href="#">
-                      <img src="./assets/img/instagram-6.png" alt="Instagram Image">
-                    </a>
-                  </div>
-                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
-                    <a href="#">
-                      <img src="./assets/img/instagram-7.png" alt="Instagram Image">
-                    </a>
-                  </div>
-                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
-                    <a href="#">
-                      <img src="./assets/img/instagram-8.png" alt="Instagram Image">
+                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0" *ngFor="let p of list_product; let i=index">
+                    <a href="#" *ngIf="i<8">
+                      <img src="{{p.image}}" alt="Instagram Image">
                     </a>
                   </div>
                 </div>
