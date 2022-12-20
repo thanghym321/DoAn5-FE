@@ -7,7 +7,7 @@
 
       <ul class="breadcrumb">
         <li><a href="" title="Trang chủ">Trang chủ</a></li>
-        <li><a href="#" title="{{product.category_Name}}">{{product.category_Name}}</a></li>
+        <li><a [routerLink]="['/home/list',product.category_Id]" title="{{product.category_Name}}">{{product.category_Name}}</a></li>
       </ul>
     </div>
   </div>
@@ -106,7 +106,7 @@
                   </div>
 
                   <div class="product-buttons">
-                    <a class="add-to-cart" href="#">
+                    <a class="add-to-cart"  (click)="_addToCart(product)">
                       <i class="fa fa-shopping-basket" aria-hidden="true"></i>
                       <span>Thêm vào giỏ hàng</span>
                     </a>
@@ -158,7 +158,7 @@
                   </div>
                   <div class="item">
                     <span class="control-label">Loại :</span>
-                    <a href="#" title="Vegetables">{{product.category_Name}}</a>
+                    <a [routerLink]="['/home/list',product.category_Id]" title="Vegetables">{{product.category_Name}}</a>
                   </div>
                   <div class="item">
                     <span class="control-label">Thẻ :</span>
@@ -293,34 +293,34 @@
 
       <div class="block-content">
         <div class="products owl-theme owl-carousel">
-          <div class="product-item">
+          <div class="product-item" *ngFor="let lp of list_product">
             <div class="product-image">
-              <a href="product-detail-left-sidebar.html">
-                <img src="img/product/4.jpg" alt="Product Image">
+              <a [routerLink]="['/home/detail',lp.id]">
+                <img src="{{lp.image}}" alt="Product Image" style="height:100px; width:100px;">
               </a>
             </div>
 
             <div class="product-title">
-              <a href="product-detail-left-sidebar.html">
-                Organic Strawberry Fruits
+              <a [routerLink]="['/home/detail',lp.id]">
+                {{lp.name}}
               </a>
             </div>
 
-            <div class="product-rating">
+            <!-- <div class="product-rating">
               <div class="star on"></div>
               <div class="star on"></div>
               <div class="star on "></div>
               <div class="star on"></div>
               <div class="star"></div>
-            </div>
+            </div> -->
 
             <div class="product-price">
-              <span class="sale-price">$80.00</span>
-              <span class="base-price">$90.00</span>
+              <span class="sale-price">{{lp.price}}</span>
+              <!-- <span class="base-price">$90.00</span> -->
             </div>
 
             <div class="product-buttons">
-              <a class="add-to-cart" href="#">
+              <a class="add-to-cart" (click)="_addToCart(lp)">
                 <i class="fa fa-shopping-basket" aria-hidden="true"></i>
               </a>
 

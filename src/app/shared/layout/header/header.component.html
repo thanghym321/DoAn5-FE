@@ -73,7 +73,7 @@
         <!-- Logo -->
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="logo">
-            <a href="index.html">
+            <a href="">
               <img class="img-responsive" src="/assets/img/logo-doan5-dai.png" alt="Logo">
             </a>
           </div>
@@ -143,7 +143,7 @@
                     <tr>
                       <td colspan="3">
                         <div class="cart-button">
-                          <a class="btn btn-primary" href="product-cart.html" title="View Cart">Xem giỏ hàng</a>
+                          <a class="btn btn-primary" [routerLink]="['customers/cart']" title="View Cart">Xem giỏ hàng</a>
                           <a class="btn btn-primary" href="product-checkout.html" title="Checkout">Thanh toán</a>
                         </div>
                       </td>
@@ -166,12 +166,12 @@
       </li>
 
       <li class="dropdown">
-        <a href="product-grid-left-sidebar.html" title="Sản phẩm">Sản phẩm</a>
+        <a title="Sản phẩm">Sản phẩm</a>
         <div class="dropdown-menu">
           <ul>
             <li class="has-image" *ngFor="let c of list_category">
               <img src="{{c.image}}" alt="Product Category Image">
-              <a href="product-grid-left-sidebar.html" title="Vegetables">{{c.name}}</a>
+              <a [routerLink]="['home/list/',c.id]"   title="Vegetables">{{c.name}}</a>
             </li>
           </ul>
         </div>

@@ -20,7 +20,6 @@ export class FooterComponent extends BaseComponent implements OnInit {
     //Product
     this._api.get('/api/Products/get').subscribe(res => {
       this.list_product = res;
-      console.log(this.list_product)
       setTimeout(() => {
         this.loadScripts('/assets/js/main.js');
       });
