@@ -1,5 +1,7 @@
 import { Component, Injector, OnInit } from '@angular/core';
 import { BaseComponent } from 'src/app/core/common/base-component';
+import { CartService } from 'src/app/core/services/cart.service';
+import { SendService } from 'src/app/core/services/send.service';
 
 @Component({
   selector: 'app-index',
@@ -12,17 +14,21 @@ export class IndexComponent extends BaseComponent implements OnInit {
   public list_category:any;
   public list_product:any;
 
-  constructor( injector: Injector) {
+  constructor( injector: Injector, private _cart: CartService, private _send: SendService) {
     super(injector);
    }
 
+  public _addToCart(item: any) {
+    this._cart.addToCart(item);
+    this._send.addObjct(this._cart.getItems().length);
+    alert('Đã thêm vào giỏ hàng thành công');
+  }
 
   ngOnInit(): void {
 
     //Slide
     this._api.get('/api/Slides/get').subscribe(res => {
       this.list_slide = res;
-      console.log(this.list_slide)
       // debugger;
       setTimeout(() => {
         this.loadScripts('/assets/js/main.js');
@@ -32,7 +38,6 @@ export class IndexComponent extends BaseComponent implements OnInit {
     //Category
     this._api.get('/api/Categories/get').subscribe(res => {
       this.list_category = res;
-      console.log(this.list_category)
       setTimeout(() => {
         this.loadScripts('/assets/js/main.js');
       });

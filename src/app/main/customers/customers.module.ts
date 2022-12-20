@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-// import { CartComponent } from './cart/cart.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// import { ThanhtoanComponent } from './thanhtoan/thanhtoan.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
   declarations: [
-    // CartComponent,
-    // ThanhtoanComponent,
+    CartComponent,
+    CheckoutComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild([
-      // { path: 'cart', component: CartComponent },
-      // { path: 'thanhtoan', component: ThanhtoanComponent }
+      { path: 'cart', component: CartComponent },
+      { path: 'checkout', component: CheckoutComponent }
     ])
   ]
 })

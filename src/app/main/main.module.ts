@@ -10,6 +10,7 @@ import { mainRoutes } from './main.route';
 @NgModule({
   declarations: [
     MainComponent,
+
   ],
   imports: [
     CommonModule,

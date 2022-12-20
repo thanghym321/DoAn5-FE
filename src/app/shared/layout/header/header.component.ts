@@ -19,7 +19,6 @@ export class HeaderComponent extends BaseComponent implements OnInit {
      //Category
      this._api.get('/api/Categories/get').subscribe(res => {
       this.list_category = res;
-      console.log(this.list_category)
       setTimeout(() => {
         this.loadScripts('/assets/js/main.js');
       });

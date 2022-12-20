@@ -1,22 +1,21 @@
-import { Component, Injector, OnInit, Renderer2 } from '@angular/core';
+import { Component, Injector, OnInit } from '@angular/core';
 import { BaseComponent } from 'src/app/core/common/base-component';
 import { CartService } from 'src/app/core/services/cart.service';
 import { SendService } from 'src/app/core/services/send.service';
-import { ActivatedRoute } from '@angular/router';
-
 
 @Component({
-  selector: 'app-detail',
-  templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.css']
+  selector: 'app-list',
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css']
 })
-export class DetailComponent extends BaseComponent implements OnInit {
+export class ListComponent extends BaseComponent implements OnInit {
 
-  list_product:any;
-   product:any;
+  public list_category:any
+  public category:any
+  public list_product:any
 
   constructor(injector: Injector, private _cart: CartService, private _send: SendService) {
-    super(injector);
+    super(injector)
   }
 
   public _addToCart(item: any) {
@@ -25,19 +24,7 @@ export class DetailComponent extends BaseComponent implements OnInit {
     alert('Đã thêm vào giỏ hàng thành công');
   }
 
-
   ngOnInit(): void {
-    this._route.params.subscribe(params => {
-      let id = params['id'];
-      this._api.get('/api/Products/getbyid/'+id).subscribe(res => {
-      this.product = res;
-      console.log(this.product)
-      debugger;
-      setTimeout(() => {
-        this.loadScripts('/assets/js/main.js');
-      });
-    });
-    });
 
     //getbycategory
     this._route.params.subscribe(params => {
@@ -49,6 +36,26 @@ export class DetailComponent extends BaseComponent implements OnInit {
         this.loadScripts('/assets/js/main.js');
       });
     });
+    });
+
+    //get category by id
+    this._route.params.subscribe(params => {
+      let id = params['id'];
+      this._api.get('/api/Categories/getbyid/'+id).subscribe(res => {
+      this.category = res;
+      console.log(this.category)
+      setTimeout(() => {
+        this.loadScripts('/assets/js/main.js');
+      });
+    });
+    });
+
+    //Category
+    this._api.get('/api/Categories/get').subscribe(res => {
+      this.list_category = res;
+      setTimeout(() => {
+        this.loadScripts('/assets/js/main.js');
+      });
     });
   }
 

@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 import { GlobalErrorComponent } from './global-error/global-error.component';
 import { GlobalErrorHandlerService } from './core/services/global-error-handler.service';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { GlobalErrorHandlerService } from './core/services/global-error-handler.
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(AppRoute,{preloadingStrategy: PreloadAllModules}),
+    RouterModule.forRoot(AppRoute,{ useHash: true }),
 
   ],
   providers: [
