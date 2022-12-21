@@ -1,3 +1,4 @@
+
 <!-- Main Content -->
 <div id="content" class="site-content">
   <!-- Slideshow -->
@@ -10,10 +11,22 @@
       </div>
     </div>
   </div>
+
+  <!-- Search -->
+<!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+  <div class="form-search">
+    <form action="#" method="get">
+      <input type="text" class="form-input" placeholder="Tìm kiếm..." [(ngModel)]="product_Name">
+      <input type="text" class="form-input" placeholder="Tìm kiếm...">
+      <input type="text" class="form-input" placeholder="Tìm kiếm..." >
+      <button type="submit" class="fa fa-search"></button>
+    </form>
+  </div>
+</div> -->
   <!-- Danh sách Loại -->
   <div class="section products-block product-tab nav-color show-hover nav-round best-sellers">
     <div class="block-title">
-      <h2 class="title"><span>Dach sách Loại</span></h2>
+      <h2 class="title"><span>Danh sách Loại</span></h2>
       <div class="sub-title"></div>
     </div>
 
@@ -1624,7 +1637,7 @@
                       </div>
 
                       <div class="product-buttons">
-                        <a class="add-to-cart" href="#" (click)="_addToCart(p)">
+                        <a class="add-to-cart" (click)="_addToCart(p)">
                           <i class="fa fa-shopping-basket" aria-hidden="true"></i>
                         </a>
 

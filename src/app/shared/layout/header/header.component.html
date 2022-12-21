@@ -86,65 +86,43 @@
           <div class="block-cart dropdown">
             <div class="cart-title">
               <i class="fa fa-shopping-basket"></i>
-              <span class="cart-count">2</span>
+              <span class="cart-count">{{sosanphams}}</span>
             </div>
 
             <div class="dropdown-content">
               <div class="cart-content">
                 <table>
                   <tbody>
-                    <tr>
+                    <tr *ngFor="let x of list">
                       <td class="product-image">
-                        <a href="product-detail-left-sidebar.html">
-                          <img src="img/product/7.jpg" alt="Product">
+                        <a [routerLink]="['home/detail',x.id]">
+                          <img src="{{x.image}}" alt="Product">
                         </a>
                       </td>
                       <td>
                         <div class="product-name">
-                          <a href="product-detail-left-sidebar.html">Organic Strawberry Fruits</a>
+                          <a [routerLink]="['home/detail',x.id]">{{x.name}}</a>
                         </div>
                         <div>
-                          2 x <span class="product-price">$28.98</span>
+                          {{x.quantity}} x <span class="product-price">{{x.price | currency:'VND'}}</span>
                         </div>
                       </td>
                       <td class="action">
-                        <a class="remove" href="#">
+                        <a class="remove" (click)="Xoa(x.id)">
                           <i class="fa fa-trash-o" aria-hidden="true"></i>
                         </a>
                       </td>
                     </tr>
-
-                    <tr>
-                      <td class="product-image">
-                        <a href="product-detail-left-sidebar.html">
-                          <img src="img/product/6.jpg" alt="Product">
-                        </a>
-                      </td>
-                      <td>
-                        <div class="product-name">
-                          <a href="product-detail-left-sidebar.html">Organic Strawberry</a>
-                        </div>
-                        <div>
-                          1 x <span class="product-price">$35.00</span>
-                        </div>
-                      </td>
-                      <td class="action">
-                        <a class="remove" href="#">
-                          <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        </a>
-                      </td>
-                    </tr>
-
                     <tr class="total">
                       <td>Tổng:</td>
-                      <td colspan="2">$92.96</td>
+                      <td colspan="2">{{tTong |currency:'VND'}}</td>
                     </tr>
 
                     <tr>
                       <td colspan="3">
                         <div class="cart-button">
-                          <a class="btn btn-primary" [routerLink]="['customers/cart']" title="View Cart">Xem giỏ hàng</a>
-                          <a class="btn btn-primary" href="product-checkout.html" title="Checkout">Thanh toán</a>
+                          <a class="btn btn-primary" [routerLink]="['customers/cart']" title="Xem giỏ hàng">Xem giỏ hàng</a>
+                          <a class="btn btn-primary" [routerLink]="['/customers/checkout']" title="Thanh toán">Thanh toán</a>
                         </div>
                       </td>
                     </tr>

@@ -1,4 +1,4 @@
-import { Component, Injector, OnInit } from '@angular/core';
+import { Component, Injector, Input, OnInit } from '@angular/core';
 import { BaseComponent } from 'src/app/core/common/base-component';
 import { CartService } from 'src/app/core/services/cart.service';
 import { SendService } from 'src/app/core/services/send.service';
@@ -9,6 +9,14 @@ import { SendService } from 'src/app/core/services/send.service';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent extends BaseComponent implements OnInit {
+
+
+  // @Input() product_Name:string;
+  // @Input() Price:any;
+  // @Input() category_Name:any;
+
+
+
 
   public list_slide:any;
   public list_category:any;
@@ -25,6 +33,16 @@ export class IndexComponent extends BaseComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    // //timkiem
+    // this._api.get('/api/Products/timkiem'+'?category_Name=').subscribe(res => {
+    //   this.list_product = res;
+    //   console.log(this.list_product)
+    //   setTimeout(() => {
+    //     this.loadScripts('/assets/js/main.js');
+    //   });
+    // });
+
 
     //Slide
     this._api.get('/api/Slides/get').subscribe(res => {

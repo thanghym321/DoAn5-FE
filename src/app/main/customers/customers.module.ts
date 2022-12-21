@@ -12,7 +12,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     CheckoutComponent
   ],
   imports: [
-    CommonModule,
+    CommonModule,FormsModule,ReactiveFormsModule,
     RouterModule.forChild([
       { path: 'cart', component: CartComponent },
       { path: 'checkout', component: CheckoutComponent }

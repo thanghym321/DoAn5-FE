@@ -40,28 +40,28 @@ export class CartService {
     }
   }
 
-  public deleteItem(maSanPham :any) {
-    let local_storage = this.getItems().filter((x:any) => x.maSanPham != maSanPham);
+  public deleteItem(id :any) {
+    let local_storage = this.getItems().filter((x:any) => x.id != id);
     localStorage.setItem('cart', JSON.stringify(local_storage));
   }
 
-  public addQty(item:any) {
-    let local_storage = JSON.parse(localStorage.getItem('cart') || '{}');
-    for (let x of local_storage) {
-      if (x.maSanPham == item.maSanPham) {
-        x.quantity = item.quantity;
-        break;
-      }
-    }
-    localStorage.setItem('cart', JSON.stringify(local_storage));
-  }
+  // public addQty(item:any) {
+  //   let local_storage = JSON.parse(localStorage.getItem('cart') || '{}');
+  //   for (let x of local_storage) {
+  //     if (x.maSanPham == item.maSanPham) {
+  //       x.quantity = item.quantity;
+  //       break;
+  //     }
+  //   }
+  //   localStorage.setItem('cart', JSON.stringify(local_storage));
+  // }
 
-  public numberOfItems() {
-    let local_storage = JSON.parse(localStorage.getItem('cart') || '{}');
-    return local_storage.length;
-  }
+  // public numberOfItems() {
+  //   let local_storage = JSON.parse(localStorage.getItem('cart') || '{}');
+  //   return local_storage.length;
+  // }
 
-  public clearCart() {
-   localStorage.clear();
-  }
+  // public clearCart() {
+  //  localStorage.clear();
+  // }
 }

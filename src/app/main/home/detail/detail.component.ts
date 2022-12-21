@@ -25,31 +25,22 @@ export class DetailComponent extends BaseComponent implements OnInit {
     alert('Đã thêm vào giỏ hàng thành công');
   }
 
-
   ngOnInit(): void {
     this._route.params.subscribe(params => {
       let id = params['id'];
       this._api.get('/api/Products/getbyid/'+id).subscribe(res => {
       this.product = res;
       console.log(this.product)
-      debugger;
-      setTimeout(() => {
-        this.loadScripts('/assets/js/main.js');
-      });
-    });
-    });
 
-    //getbycategory
-    this._route.params.subscribe(params => {
-      let id = params['id'];
-      this._api.get('/api/Products/getbycategory?Category_Id='+id).subscribe(res => {
-      this.list_product = res;
-      console.log(this.list_product)
-      setTimeout(() => {
-        this.loadScripts('/assets/js/main.js');
+      this._api.get('/api/Products/getbycategory?Category_Id='+res.category_Id).subscribe(res => {
+        this.list_product = res;
+        console.log(this.list_product)
       });
-    });
+
+        setTimeout(() => {
+          this.loadScripts('/assets/js/main.js');
+        });
+      });
     });
   }
-
 }
